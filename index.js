@@ -1,5 +1,12 @@
 const eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']
 
+function avenues(start, end) {
+  i = eastWest.indexOf(start)
+  j = eastWest.indexOf(end)
+
+  return Math.abs(i - j)
+}
+
 class Driver {
   constructor(name, date) {
     this.name = name
@@ -12,12 +19,12 @@ class Driver {
 }
 
 class Route {
-  constructor(beginningLocation, endingLocation) {
+  constructor(start, end) {
     this.beginningLocation = beginningLocation
     this.endingLocation = endingLocation
   }
 
   blocksTravelled() {
-
+    
   }
 }
