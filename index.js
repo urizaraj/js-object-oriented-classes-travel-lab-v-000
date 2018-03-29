@@ -30,4 +30,9 @@ class Route {
 
     return streetDistance + avenueDistance
   }
+
+  estimatedTime(peak) {
+    const div = (peak ? 2 : 3)
+    return this.blocksTravelled() / div
+  }
 }
